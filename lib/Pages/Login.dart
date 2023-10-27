@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         type: QuickAlertType.error,
         title: 'Intente de Nuevo',
-        text: 'Usuario o Contraseña incorrecto',
+        text: 'Usuario o Contraseña Incorrecto',
       );
     }
   }
