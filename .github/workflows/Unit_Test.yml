@@ -1,0 +1,25 @@
+name: Lenguage4U CI - Unit Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  unit-tests:
+   name: Unit Tests
+   runs-on: ubuntu-lastest
+   steps:
+     -name: Checkout the branch
+      uses: actions/checkout@v3
+     -name: Install flitter 
+      uses: subosito/flotter-action@v3
+      with:
+        channel: "beta"
+    -name: Get packages
+     run: flutter pub get
+    -name: Build runner
+     run: flutter pub run build_runner build
+    -name: Run unit tests 
+     
