@@ -1,9 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:ing/Pages/ContenidoPage.dart';
-// import 'package:ing/Pages/FiresTore/TemasNombre.dart';
-
+import 'package:ing/Pages/Login.dart';
+import 'package:ing/Pages/Menu_Tema.dart';
 
 import 'Videos.dart';
 
@@ -14,7 +13,6 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
-
 }
 
 class _HomePageState extends State<HomePage> {
@@ -28,105 +26,81 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Temas de Aprendisaje"),
+        title: Text("Temas de Aprendizaje"),
       ),
-      body:
-      Column(children: [
-        Expanded(child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-          child: StreamBuilder(
-            stream: FirebaseFirestore.instance.collection('Temas').snapshots(),
-            builder: (context, AsyncSnapshot<QuerySnapshot> snapshot){
-              if(!snapshot.hasData){
-                return CircularProgressIndicator();
-              }
-              List<DocumentSnapshot> docs = snapshot.data!.docs;
-              return GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 300,
-                      childAspectRatio: 0.7,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 20),
-                  itemCount: docs.length,
-                  itemBuilder: (context, index){
-                    final DocumentSnapshot tema = docs[index];
-                    return Container(
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 15),
-                            child: ClipOval(
-                              child: Image(
-                                image: NetworkImage(tema['img'].toString()),
-                                width: 120,
-                                height: 120,
-                                fit: BoxFit.fill,
+      body: Column(
+        children: [Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              child: StreamBuilder(
+                stream:
+                    FirebaseFirestore.instance.collection('Temas').snapshots(),
+                builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+                  if (!snapshot.hasData) {
+                    return CircularProgressIndicator();}
+                  List<DocumentSnapshot> docs = snapshot.data!.docs;
+                  return GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithMaxCrossAxisExtent(
+                              maxCrossAxisExtent: 300, childAspectRatio: 0.7,
+                              crossAxisSpacing: 10, mainAxisSpacing: 20),
+                      itemCount: docs.length,
+                      itemBuilder: (context, index) {
+                        final DocumentSnapshot tema = docs[index];
+                        return Container(
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(color: Colors.blueAccent,
+                              borderRadius: BorderRadius.circular(15)),
+                          child: Column(
+                            children: [Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 15),
+                                child: ClipOval(
+                                  child: Image(image: NetworkImage(tema['img'].toString()),
+                                    width: 120, height: 120, fit: BoxFit.fill,
+                                  ),),
                               ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15, right: 10),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  tema['Nombre'],
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 0),
-                                  child: TextButton(
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Videos(idTem: tema.id,)),
-                                      );
-                                    },
-
-                                    child: Container(
-                                      width: 100,
-                                      padding: EdgeInsets.all(9),
-                                      decoration: BoxDecoration(
-                                          color: Colors.greenAccent,
-
-                                          borderRadius: BorderRadius.circular(18)
-                                      ),
-                                      child: const Text("Ver",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontSize: 18,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          )),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 15, right: 10),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [Text(tema['Nombre'],
+                                      style: TextStyle(color: Colors.white,
+                                          fontSize: 18, fontWeight: FontWeight.w500),
                                     ),
-                                  ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 0),
+                                      child: TextButton(
+                                        onPressed: () {
+                                          Navigator.push(context, MaterialPageRoute(
+                                              builder: (context) => MenuTema(idTem: tema.id, Tem: tema['Nombre'],
+                                              ),),);},
+                                        child: Container(
+                                          width: 100, padding: EdgeInsets.all(9),
+                                          decoration: BoxDecoration(
+                                              color: Colors.greenAccent,
+                                              borderRadius: BorderRadius.circular(18)),
+                                          child: const Text("Ver", textAlign: TextAlign.center,
+                                              style: TextStyle(fontSize: 18, color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              )),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    );
-                  }
-              );
-
-            },
+                        );
+                      });
+                },
+              ),
+            ),
           ),
-        ),
-    ),
-      ],
+        ],
       ),
     );
-
+    return const Placeholder();
   }
 }

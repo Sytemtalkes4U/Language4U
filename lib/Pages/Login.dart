@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         type: QuickAlertType.error,
         title: 'Intente de Nuevo',
-        text: 'Usuario o Contraseña Incorrecto',
+        text: 'Usuario o Contraseña incorrecto',
       );
     }
   }
@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[100],
+      backgroundColor: Colors.blueAccent,
       body:SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -79,6 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           hintText: 'Usuario'
                       ),
+
                       validator: (value) {
                         if (value == "") {
                           return "Este campo es obligatorio";
