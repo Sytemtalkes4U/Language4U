@@ -17,6 +17,8 @@ jobs:
         uses: subosito/flutter-action@v3
         with:
           channel: "stable"
+      - name: Clean proyect
+        run: flutter clean
       - name: Get packages
         run: flutter pub get
       - name: Build runner
