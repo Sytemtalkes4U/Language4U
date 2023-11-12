@@ -8,23 +8,23 @@ on:
 
 jobs:
   unit-tests:
-   name: Unit Tests
-   runs-on: ubuntu-lastest
-   steps:
-     - name: Checkout the branch
-       uses: actions/checkout@v3
-     - name: Install flitter 
-       uses: subosito/flotter-action@v3
-       with:
-         channel: "stable"
-     - name: Get packages
-       run: flutter pub get
-     - name: Build runner
-       run: flutter pub run build_runner build
-     - name: Run unit tests
-       run: flutter test --coverae
-     - name: Publish coverage to codecov
-       uses: code/codecov-action@v1.0.12
-       with:
-         token: ${{secrets.CODECOV_TOKEN}}
-         file: ./coverage/lcov.info
+    name: Unit Tests
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Checkout the branch
+        uses: actions/checkout@v3
+      - name: Install flitter 
+        uses: subosito/flotter-action@v3
+        with:
+          channel: "stable"
+      - name: Get packages
+        run: flutter pub get
+      - name: Build runner
+        run: flutter pub run build_runner build
+      - name: Run unit tests
+        run: flutter test --coverae
+      - name: Publish coverage to codecov
+        uses: code/codecov-action@v1.0.12
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
+          file: ./coverage/lcov.info
