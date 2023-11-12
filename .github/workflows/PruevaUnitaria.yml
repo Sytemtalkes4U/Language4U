@@ -23,8 +23,10 @@ jobs:
         run: flutter clean
       - name: Get packages
         run: flutter pub get
-      - name: Build runner
+      - name: Bulik dart
         run: dart run build_runner build --delete-conflicting-outputs
+      - name: Build runner
+        run: flutter pub run build_runner build --delete-conflicting-outputs
       - name: Run unit tests
         run: flutter test --coverae
       - name: Publish coverage to codecov
