@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout the branch
         uses: actions/checkout@v3
-      - name: Install flitter 
-        uses: subosito/flotter-action@v3
+      - name: Install flutter 
+        uses: subosito/flutter-action@v3
         with:
           channel: "stable"
       - name: Get packages
@@ -24,7 +24,7 @@ jobs:
       - name: Run unit tests
         run: flutter test --coverae
       - name: Publish coverage to codecov
-        uses: code/codecov-action@v1.0.12
+        uses: codecov/codecov-action@v1.0.12
         with:
           token: ${{secrets.CODECOV_TOKEN}}
           file: ./coverage/lcov.info
