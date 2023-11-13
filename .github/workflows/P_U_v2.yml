@@ -22,8 +22,13 @@ jobs:
         with:
           channel: "stable"
           cache: true
+      
+      - name: cls
+        run: fltter clean
       - name: Get packages
         run: flutter pub get
+      - name: upg
+        run: dart pub upgrade
       - name: Build runner
         run: flutter pub run build_runner build
       - name: Run unit tests
