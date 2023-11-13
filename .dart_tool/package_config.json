@@ -2,16 +2,34 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/_fe_analyzer_shared-61.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "_flutterfire_internals",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/_flutterfire_internals-1.3.7",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
+      "name": "analyzer",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/analyzer-5.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "appinio_video_player",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/appinio_video_player-1.2.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "async",
@@ -32,10 +50,64 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "build",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "build_config",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build_config-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_daemon",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build_daemon-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_resolvers",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build_resolvers-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "build_runner",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build_runner-2.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_runner_core",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/build_runner_core-7.2.7+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/built_collection-5.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/built_value-8.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "clock",
@@ -62,10 +134,22 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "code_builder",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/code_builder-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "crypto",
@@ -86,6 +170,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "dart_style",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/dart_style-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -96,6 +186,12 @@
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/file-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_auth",
@@ -134,6 +230,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "fixnum",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///C:/flutter/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -164,6 +266,18 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "frontend_server_client",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/frontend_server_client-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/glob-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "google_fonts",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-4.0.4",
       "packageUri": "lib/",
@@ -188,6 +302,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "http_multi_server",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
@@ -200,16 +320,34 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "io",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/io-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
     {
+      "name": "json_annotation",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/json_annotation-4.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "matcher",
@@ -226,6 +364,30 @@
     {
       "name": "meta",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "mobx",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/mobx-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "mobx_codegen",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/mobx_codegen-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.13"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -284,6 +446,24 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "pubspec_parse",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/pubspec_parse-1.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "quickalert",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/quickalert-1.0.2",
       "packageUri": "lib/",
@@ -302,10 +482,28 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "shelf",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/shelf_web_socket-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/flutter/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "source_gen",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/source_gen-1.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "source_span",
@@ -326,6 +524,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "stream_transform",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/stream_transform-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "string_scanner",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
@@ -342,6 +546,12 @@
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.4.16",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "timing",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/timing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "typed_data",
@@ -386,6 +596,18 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "watcher",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/watcher-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "win32",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
@@ -394,6 +616,12 @@
     {
       "name": "xdg_directories",
       "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///C:/Users/Mats/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -410,7 +638,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-10-24T09:16:54.895390Z",
+  "generated": "2023-11-13T01:02:24.835037Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }
