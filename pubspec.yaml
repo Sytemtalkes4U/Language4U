@@ -39,6 +39,7 @@ dependencies:
   google_fonts:
   awesome_dialog:
   meta:
+  watcher:
   intl:
 
   # The following adds the Cupertino Icons font to your application.
