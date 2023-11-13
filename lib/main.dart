@@ -2,8 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:ing/Pages/HomePage.dart';
 import 'package:ing/Pages/Login.dart';
 import 'package:flutter/material.dart';
-//import 'package:ing/Pages/Home_Pagee.dart';
-//import 'package:ing/Pages/game/game.dart';
 
 
 
