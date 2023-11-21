@@ -1,5 +1,4 @@
-
-import 'dart:collection';
+//import 'dart:collection';
 
 import 'package:flutter/material.dart';
 
@@ -7,8 +6,8 @@ class GameLogic {
   final String hiddenCard = 'assets/images/box.png';
   List<String>? cardsImg;
   String level = '';
-  String idTem= '';
-  String Tem= '';
+  String idTem = '';
+  String Tem = '';
 
   late List<String> card_list = [];
 
@@ -85,7 +84,7 @@ class GameLogic {
         'assets/images/yellow.png',
         'assets/images/yellow.png',
       ];
-    }else if (difficult == 'Colores') {
+    } else if (difficult == 'Colores') {
       cardCount = 16;
       axiCount = 4;
       card_list = [
@@ -106,7 +105,7 @@ class GameLogic {
         'assets/images/pink.png',
         'assets/images/Blue.png',
       ];
-    } else if (difficult == 'Numeros') {
+    } else if (difficult == 'Números') {
       cardCount = 16;
       axiCount = 4;
       card_list = [
@@ -127,7 +126,28 @@ class GameLogic {
         'assets/images/num/8.png',
         'assets/images/num/8.png',
       ];
-    }else {
+    } else if (difficult == 'Abecedario') {
+      cardCount = 16;
+      axiCount = 4;
+      card_list = [
+        'assets/images/letras/A.png',
+        'assets/images/letras/A.png',
+        'assets/images/letras/E.png',
+        'assets/images/letras/E.png',
+        'assets/images/letras/I.png',
+        'assets/images/letras/I.png',
+        'assets/images/letras/O.png',
+        'assets/images/letras/O.png',
+        'assets/images/letras/U.png',
+        'assets/images/letras/U.png',
+        'assets/images/letras/A.png',
+        'assets/images/letras/A.png',
+        'assets/images/letras/E.png',
+        'assets/images/letras/E.png',
+        'assets/images/letras/O.png',
+        'assets/images/letras/O.png',
+      ];
+    } else {
       cardCount = 16;
       axiCount = 4;
       card_list = [

@@ -18,25 +18,6 @@ class _LoginPageState extends State<LoginPage> {
   final txtUserController = TextEditingController();
   final txtPasswordController = TextEditingController();
 
-  Future<void> _login() async {
-    try {
-      UserCredential userCredential = await _auth.signInWithEmailAndPassword(
-          email: txtUserController.text, password: txtPasswordController.text);
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => HomePage()),
-      );
-    } //try
-    catch (e) {
-      print("ocurrio un error" + e.toString());
-      QuickAlert.show(
-        context: context,
-        type: QuickAlertType.error,
-        title: 'Intente de Nuevo',
-        text: 'Usuario o Contraseña incorrecto',
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -113,12 +94,28 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 20,),
                   Padding(padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: TextButton(
-                      onPressed: () {
+                      onPressed: () async {
                         var isValid = _form.currentState?.validate();
                         if (isValid == null || !isValid) {
                           return;
                         }
-                        _login();
+                        try {
+                          UserCredential userCredential = await _auth.signInWithEmailAndPassword(
+                              email: txtUserController.text, password: txtPasswordController.text);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        } //try
+                        catch (e) {
+                          print("ocurrio un error" + e.toString());
+                          QuickAlert.show(
+                            context: context,
+                            type: QuickAlertType.error,
+                            title: 'Intente de Nuevo',
+                            text: 'Usuario o Contraseña incorrecto',
+                          );
+                        }
                       },
                       child:Container(
                         width: 350,
